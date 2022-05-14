@@ -31,5 +31,21 @@ export default function Price(props) {
 
     useEffect(() => {getCoin()}, [])
 
-    return ("this is price")
+    
+    //function for loaded
+    function loaded() {
+        return <div>
+            <h1>{coin.symbol}</h1>
+            <h2>{coin.price}</h2>
+        </div>
+    }
+
+    const loading = () => {
+        return <div>
+            <h2>LOADING...</h2>
+        </div>
+    }
+
+
+    return coin ? loaded() : loading()
 }

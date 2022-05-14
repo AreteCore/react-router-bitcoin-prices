@@ -9,6 +9,8 @@ export default function Currencies(props) {
           { name: "Zcash", symbol: "ZECUSD" },
           { name: "Bitcoin Cash", symbol: "BCHUSD" },
         ]
+
+
     return (
         <div className="currencies">
             {currencies.map(({ name, symbol }, index) => {
