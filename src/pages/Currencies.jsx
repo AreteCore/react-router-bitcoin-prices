@@ -1,16 +1,14 @@
 import {Link} from  "react-router-dom"
 
 export default function Currencies(props) {
-    const currencies = [
-        { name: "Bitcoin", symbol: "BTCUSD" },
-        { name: "Litecoin", symbol: "LTCUSD" },
-        { name: "Ethereum", symbol: "ETHUSD" },
-        { name: "Ethereum Classic", symbol: "ETCUSD" },
-        { name: "Stellar Lumens", symbol: "XLMUSD" },
-        { name: "Dash", symbol: "DASHUSD" },
-        { name: "Ripple", symbol: "XRPUSD" },
-        { name: "Zcash", symbol: "ZECUSD" },
-    ]
+    
+        const currencies = [
+          { name: "Bitcoin", symbol: "BTCUSD" },
+          { name: "Litecoin", symbol: "LTCUSD" },
+          { name: "Ethereum", symbol: "ETHUSD" },
+          { name: "Zcash", symbol: "ZECUSD" },
+          { name: "Bitcoin Cash", symbol: "BCHUSD" },
+        ]
     return (
         <div className="currencies">
             {currencies.map(({ name, symbol }, index) => {
