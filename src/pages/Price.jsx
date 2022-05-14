@@ -16,6 +16,7 @@ export default function Price(props) {
 
     //state to hold coin data
     const [coin, setCoin] = useState(null)
+    const [bump, setBump] = useState(0)
 
     //
     const getCoin = async () => {
@@ -29,7 +30,14 @@ export default function Price(props) {
     //     setCoin(data)
     //   }
 
-    useEffect(() => {getCoin()}, [])
+    useEffect(() => {
+        getCoin()
+        setTimeout(()=>{
+            setBump(bump + 1)
+        }, 5000)
+    }, 
+        // [bump])
+        [])
 
     
     //function for loaded

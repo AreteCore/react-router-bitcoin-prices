@@ -9,6 +9,7 @@ import Main from './pages/Main';
 import Nav from './components/Nav'
 
 function App() {
+  //bunch of shit here too
   return (
     <div className="App">
       <Nav />
